@@ -14,14 +14,14 @@
             <h2>Welcome</h2>
             <label>
                 <span>Email</span>
-                <input type="email" />
+                <input type="email" id="signin-email" />
             </label>
             <label>
                 <span>Password</span>
-                <input type="password" />
+                <input type="password" id="signin-password" />
             </label>
             <p class="forgot-pass">Forgot password?</p>
-            <button type="button" class="submit">Sign In</button>
+            <button type="button" class="submit" onclick="signIn()">Sign In</button>
         </div>
         <div class="sub-cont">
             <div class="img">
@@ -31,7 +31,7 @@
                 <div class="img__text m--in">
                     <h3>If you already have an account, just sign in.</h3>
                 </div>
-                <div class="img__btn">
+                <div class="img__btn" onclick="toggleForm()">
                     <span class="m--up">Sign Up</span>
                     <span class="m--in">Sign In</span>
                 </div>
@@ -40,17 +40,46 @@
                 <h2>Create your Account</h2>
                 <label>
                     <span>Name</span>
-                    <input type="text" />
+                    <input type="text" id="signup-name" />
                 </label>
                 <label>
                     <span>Email</span>
-                    <input type="email" />
+                    <input type="email" id="signup-email" />
                 </label>
                 <label>
                     <span>Password</span>
-                    <input type="password" />
+                    <input type="password" id="signup-password" />
                 </label>
-                <button type="button" class="submit">Sign Up</button>
+                <label>
+                    <span>Phone Number</span>
+                    <input type="text" id="signup-phone" />
+                </label>
+                <label>
+                    <span>Country of Residence</span>
+                    <input type="text" id="signup-country" />
+                </label>
+                <label>
+                    <span>Occupation</span>
+                    <select id="signup-occupation">
+                        <option value="Student">Student</option>
+                        <option value="Professional">Professional</option>
+                    </select>
+                </label>
+                <label>
+                    <span>University/Company</span>
+                    <input type="text" id="signup-university-company" />
+                </label>
+                <label>
+                    <span>CO2 Credits</span>
+                    <select id="signup-co2-credits">
+                        <option value="0-20">0-20</option>
+                        <option value="20-40">20-40</option>
+                        <option value="40-60">40-60</option>
+                        <option value="60-80">60-80</option>
+                        <option value="80-100">80-100</option>
+                    </select>
+                </label>
+                <button type="button" class="submit" onclick="signUp()">Sign Up</button>
             </div>
         </div>
     </div>
